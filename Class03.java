@@ -1,5 +1,4 @@
 package JAVA15;
-
 class CTest extends Thread 
 {
 	private String id;
@@ -17,14 +16,13 @@ class CTest extends Thread
 	}
 }
 
-public class Class02 {
-
-	public static void main(String[] args) {
+public class Class03 {
+	public static void main(String[] args)
+	{
 		CTest hi = new CTest("Hello");
 		CTest bye = new CTest("Good bye");
-		hi.run();
-		bye.run();
-
+		hi.start();
+		bye.start();
 	}
 
 }
